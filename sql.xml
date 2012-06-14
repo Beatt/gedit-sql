@@ -1,0 +1,9 @@
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="text/x-sql">
+    <comment>SQL Source including PL/SQL</comment>
+    <!-- more translated comment elements -->
+    <glob pattern="*.sql"/>
+    <glob pattern="*.pks"/>
+    <glob pattern="*.pkb"/>
+  </mime-type>
+</mime-info>
