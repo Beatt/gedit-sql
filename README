@@ -1,6 +1,6 @@
 Extend the existing sql.lang file to support more Oracle keywords
 
-## Installation Instructions 
+==Installation Instructions ==
 
 Assumption: 
 
@@ -9,30 +9,22 @@ Assumption:
 * Updating GtkSourceView 3.0+ (for 2.0+ simply replace 3.0 with 2.0 where necessary)
 * Working in the directory where the files are located
 
-### Update Mime Type
+===Update Mime Type===
 
 Copy the file sql.xml into either /usr/share/mime/packages (or ~/.local/share/mime/packages.)
 
-```bash
 sudo cp sql.xml /usr/share/mime/packages/
-```
 
 Then update the mime type database, pointing to the mime folder you copied it to:
 
-```bash
 sudo update-mime-database /usr/share/mime/
-```
 
-### Update the lang file
+===Update the lang file===
 
 Make a backup of the original
 
-```bash
 sudo cp /usr/share/gtksourceview-3.0/language-specs/sql.lang /usr/share/gtksourceview-3.0/language-specs/sql.lang.backup1
-```
 
 Then plug-in the new file:
 
-```bash
 sudo cp sql.lang /usr/share/gtksourceview-3.0/language-specs/
-```
